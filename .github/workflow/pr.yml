@@ -1,0 +1,10 @@
+name: Terraform lint and plan
+
+# this is the event trigger
+on:
+   push: 
+     branches: ["main"]  ## pipeline should be triggered upon push to the main branch
+   pull-request:
+     branches: ["main"] ## pipelins should be triggered upon push to main
+
+jobs: 
